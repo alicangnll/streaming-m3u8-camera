@@ -55,7 +55,6 @@ echo '<script>
 </script>
 <b>You have to write this code as root user. If you are in linux.</b></br>
 <pre>'.$code.'</pre></br>
-<pre>Your M3U8 files http://'.$_SERVER['HTTP_HOST'].'/m3u/</pre></br>
 <a href="index.php?git=stream-m3u8">Stream M3U8</a></br>
 <a href="index.php?git=stream-ts">Stream TS</a></br>
 <a href="index.php?git=stream-insta">Stream Instagram</a></br>
@@ -64,7 +63,8 @@ echo '<script>
 <a href="index.php?git=stream-restream">Stream Restream</a></br>
 <a href="index.php?git=stream-yt">Stream YouTube</a></br>
 <a href="index.php?git=stream-custom">Stream Custom</a></br>
-<a href="index.php?git=stream-stop">Stop Streams</a></br>';
+<a href="index.php?git=stream-stop">Stop Streams</a></br>
+<a href="./m3u">M3U Directory</a></br>';
 break;
 
 case 'stream-m3u8':
