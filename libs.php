@@ -88,6 +88,8 @@ public function StopFFMPEG() {
   window.location.href='index.php';
   </script>";
   }
+  array_map('unlink', array_filter((array) glob(''.dirname(__FILE__).'/m3u/*.ts')));
+  array_map('unlink', array_filter((array) glob(''.dirname(__FILE__).'/m3u/*.m3u8')));
 }
 public function TSDebugStream($pubname, $tslinks, $configts) {
   $filename = ''.strip_tags($pubname).'.ts';
