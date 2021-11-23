@@ -1,4 +1,3 @@
-# iptv-class
 <h1>PHP IPTV Class</h1>
 </br>
 <pre>
