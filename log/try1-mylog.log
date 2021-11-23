@@ -1,0 +1,406 @@
+ffmpeg version 4.3.1 Copyright (c) 2000-2020 the FFmpeg developers
+  built with gcc 10.2.1 (GCC) 20200726
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libdav1d --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvmaf --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libgsm --disable-w32threads --enable-libmfx --enable-ffnvcodec --enable-cuda-llvm --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth --enable-libopenmpt --enable-amf
+  libavutil      56. 51.100 / 56. 51.100
+  libavcodec     58. 91.100 / 58. 91.100
+  libavformat    58. 45.100 / 58. 45.100
+  libavdevice    58. 10.100 / 58. 10.100
+  libavfilter     7. 85.100 /  7. 85.100
+  libswscale      5.  7.100 /  5.  7.100
+  libswresample   3.  7.100 /  3.  7.100
+  libpostproc    55.  7.100 / 55.  7.100
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_1.m3u8' for reading
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-DISCONTINUITY-SEQUENCE:5')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:49.272Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752524,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:54.277Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752529,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:59.282Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752534,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:04.287Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752539,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:09.292Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752544,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:14.297Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752549,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:19.302Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752554,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:24.307Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752559,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:29.312Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752564,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:34.317Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752569,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:39.322Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752574,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:44.327Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752579,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:49.332Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752584,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:54.337Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752589,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:59.342Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752594,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:04.347Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752599,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:09.352Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752604,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:14.357Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752609,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:19.362Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752614,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:24.367Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752619,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:29.372Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752624,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:34.377Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752629,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:39.382Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752635,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:44.387Z')
+[hls @ 065ed240] Skip ('#EXT-OATCLS-SCTE35:/DAgAAAAAyiYAP/wDwUAAMGKf0/+Mz7x2AAAAAAAAILg/yI=')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-IN')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:49.392Z')
+[https @ 06bbf400] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_2.m3u8' for reading
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-DISCONTINUITY-SEQUENCE:5')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:49.272Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752524,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:54.277Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752529,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:59.282Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752534,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:04.287Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752539,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:09.292Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752544,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:14.297Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752549,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:19.302Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752554,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:24.307Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752559,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:29.312Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752564,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:34.317Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752569,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:39.322Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752574,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:44.327Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752579,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:49.332Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752584,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:54.337Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752589,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:59.342Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752594,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:04.347Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752599,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:09.352Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752604,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:14.357Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752609,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:19.362Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752614,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:24.367Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752619,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:29.372Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752624,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:34.377Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752629,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:39.382Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752635,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:44.387Z')
+[hls @ 065ed240] Skip ('#EXT-OATCLS-SCTE35:/DAgAAAAAyiYAP/wDwUAAMGKf0/+Mz7x2AAAAAAAAILg/yI=')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-IN')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:49.392Z')
+[https @ 06bbf400] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_3.m3u8' for reading
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-DISCONTINUITY-SEQUENCE:5')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:49.272Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752524,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:54.277Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752529,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:59.282Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752534,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:04.287Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752539,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:09.292Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752544,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:14.297Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752549,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:19.302Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752554,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:24.307Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752559,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:29.312Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752564,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:34.317Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752569,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:39.322Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752574,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:44.327Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752579,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:49.332Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752584,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:54.337Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752589,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:59.342Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752594,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:04.347Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752599,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:09.352Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752604,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:14.357Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752609,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:19.362Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752614,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:24.367Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752619,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:29.372Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752624,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:34.377Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752629,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:39.382Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752635,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:44.387Z')
+[hls @ 065ed240] Skip ('#EXT-OATCLS-SCTE35:/DAgAAAAAyiYAP/wDwUAAMGKf0/+Mz7x2AAAAAAAAILg/yI=')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-IN')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:49.392Z')
+[https @ 06bbf400] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_4.m3u8' for reading
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-DISCONTINUITY-SEQUENCE:5')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:49.272Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752524,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:54.277Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752529,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:59.282Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752534,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:04.287Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752539,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:09.292Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752544,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:14.297Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752549,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:19.302Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752554,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:24.307Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752559,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:29.312Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752564,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:34.317Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752569,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:39.322Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752574,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:44.327Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752579,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:49.332Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752584,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:54.337Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752589,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:59.342Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752594,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:04.347Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752599,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:09.352Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752604,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:14.357Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752609,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:19.362Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752614,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:24.367Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752619,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:29.372Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752624,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:34.377Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752629,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:39.382Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752635,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:44.387Z')
+[hls @ 065ed240] Skip ('#EXT-OATCLS-SCTE35:/DAgAAAAAyiYAP/wDwUAAMGKf0/+Mz7x2AAAAAAAAILg/yI=')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-IN')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:49.392Z')
+[https @ 06bbf400] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_5.m3u8' for reading
+[hls @ 065ed240] Skip ('#EXT-X-VERSION:3')
+[hls @ 065ed240] Skip ('#EXT-X-DISCONTINUITY-SEQUENCE:5')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:49.272Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752524,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:54.277Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752529,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:31:59.282Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752534,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:04.287Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752539,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:09.292Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752544,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:14.297Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752549,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:19.302Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752554,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:24.307Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752559,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:29.312Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752564,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:34.317Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752569,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:39.322Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752574,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:44.327Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752579,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:49.332Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752584,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:54.337Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752589,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:32:59.342Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752594,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:04.347Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752599,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:09.352Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752604,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:14.357Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752609,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:19.362Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752614,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:24.367Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752619,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:29.372Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752624,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:34.377Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752629,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:39.382Z')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-OUT-CONT:ElapsedTime=312752635,Duration=121,SCTE35=/DAlAAAAAyiYAP/wFAUAAMGKf+/+MpnY9/4ApQ8FAAAAAAAAP9OsDg==')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:44.387Z')
+[hls @ 065ed240] Skip ('#EXT-OATCLS-SCTE35:/DAgAAAAAyiYAP/wDwUAAMGKf0/+Mz7x2AAAAAAAAILg/yI=')
+[hls @ 065ed240] Skip ('#EXT-X-CUE-IN')
+[hls @ 065ed240] Skip ('#EXT-X-PROGRAM-DATE-TIME:2021-11-23T17:33:49.392Z')
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_120211123T173339_870723.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_120211123T173344_870724.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_220211123T173339_870723.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_220211123T173344_870724.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_320211123T173339_870723.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_320211123T173344_870724.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_420211123T173339_870723.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_420211123T173344_870724.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_520211123T173339_870723.ts' for reading
+[hls @ 065ed240] Opening 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master_520211123T173344_870724.ts' for reading
+Input #0, hls, from 'https://siloh-ns1.plutotv.net/lilo/production/bein/1/master.m3u8':
+  Duration: N/A, start: 9550.185633, bitrate: N/A
+  Program 0 
+    Metadata:
+      variant_bitrate : 2977158
+    Stream #0:0: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1280x720 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+    Metadata:
+      variant_bitrate : 2977158
+    Stream #0:1: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 2977158
+    Stream #0:2: Data: scte_35
+    Metadata:
+      variant_bitrate : 2977158
+    Stream #0:3: Data: timed_id3 (ID3  / 0x20334449)
+    Metadata:
+      variant_bitrate : 2977158
+  Program 1 
+    Metadata:
+      variant_bitrate : 2019972
+    Stream #0:4: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 854x480 [SAR 1:1 DAR 427:240], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+    Metadata:
+      variant_bitrate : 2019972
+    Stream #0:5: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 2019972
+    Stream #0:6: Data: scte_35
+    Metadata:
+      variant_bitrate : 2019972
+    Stream #0:7: Data: timed_id3 (ID3  / 0x20334449)
+    Metadata:
+      variant_bitrate : 2019972
+  Program 2 
+    Metadata:
+      variant_bitrate : 1302083
+    Stream #0:8: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 854x480 [SAR 1:1 DAR 427:240], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+    Metadata:
+      variant_bitrate : 1302083
+    Stream #0:9: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 1302083
+    Stream #0:10: Data: scte_35
+    Metadata:
+      variant_bitrate : 1302083
+    Stream #0:11: Data: timed_id3 (ID3  / 0x20334449)
+    Metadata:
+      variant_bitrate : 1302083
+  Program 3 
+    Metadata:
+      variant_bitrate : 823489
+    Stream #0:12: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 640x360 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+    Metadata:
+      variant_bitrate : 823489
+    Stream #0:13: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 823489
+    Stream #0:14: Data: scte_35
+    Metadata:
+      variant_bitrate : 823489
+    Stream #0:15: Data: timed_id3 (ID3  / 0x20334449)
+    Metadata:
+      variant_bitrate : 823489
+  Program 4 
+    Metadata:
+      variant_bitrate : 464544
+    Stream #0:16: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 426x240 [SAR 1:1 DAR 71:40], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+    Metadata:
+      variant_bitrate : 464544
+    Stream #0:17: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 464544
+    Stream #0:18: Data: scte_35
+    Metadata:
+      variant_bitrate : 464544
+    Stream #0:19: Data: timed_id3 (ID3  / 0x20334449)
+    Metadata:
+      variant_bitrate : 464544
+Please use -q:a or -q:v, -qscale is ambiguous
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> mp3 (libmp3lame))
+Press [q] to stop, [?] for help
+Fontconfig error: Cannot load default config file
+[Parsed_drawtext_0 @ 06f4eb80] Using "C:/Windows/fonts/mingliu.ttc"
+[libx264 @ 08df2440] -qscale is ignored, -crf is recommended.
+[libx264 @ 08df2440] VBV maxrate unspecified, assuming CBR
+[libx264 @ 08df2440] using SAR=64/45
+[libx264 @ 08df2440] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 08df2440] profile Constrained Baseline, level 3.2, 4:2:0, 8-bit
+[libx264 @ 08df2440] 264 - core 161 - H.264/MPEG-4 AVC codec - Copyleft 2003-2020 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=0:0:0 analyse=0:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=60 keyint_min=6 scenecut=0 intra_refresh=0 rc_lookahead=0 rc=cbr mbtree=0 bitrate=2500 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 vbv_maxrate=2500 vbv_bufsize=3750 nal_hrd=none filler=0 ip_ratio=1.40 aq=0
+Output #0, flv, to 'rtmp://localhost:1935/':
+  Metadata:
+    encoder         : Lavf58.45.100
+    Stream #0:0: Video: h264 (libx264) ([7][0][0][0] / 0x0007), yuv420p(progressive), 1280x1024 [SAR 64:45 DAR 16:9], q=-1--1, 2500 kb/s, 30 fps, 1k tbn, 30 tbc
+    Metadata:
+      variant_bitrate : 2977158
+      encoder         : Lavc58.91.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/2500000 buffer size: 3750000 vbv_delay: N/A
+    Stream #0:1: Audio: mp3 (libmp3lame) ([2][0][0][0] / 0x0002), 44100 Hz, stereo, fltp, 712 kb/s
+    Metadata:
+      variant_bitrate : 2977158
+      encoder         : Lavc58.91.100 libmp3lame
+av_interleaved_write_frame(): Unknown error
+[flv @ 0a2b9600] Failed to update header with correct duration.
+[flv @ 0a2b9600] Failed to update header with correct filesize.
+Error writing trailer of rtmp://localhost:1935/: Error number -10054 occurred
+frame=   32 fps=0.0 q=-1.0 Lsize=       0kB time=00:00:01.03 bitrate=   3.0kbits/s speed=4.97x    
+video:306kB audio:1kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[libx264 @ 08df2440] frame I:1     Avg QP:29.00  size: 15389
+[libx264 @ 08df2440] frame P:31    Avg QP:23.94  size:  9597
+[libx264 @ 08df2440] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 08df2440] mb P  I16..4: 10.8%  0.0%  0.0%  P16..4: 11.0%  0.0%  0.0%  0.0%  0.0%    skip:78.2%
+[libx264 @ 08df2440] coded y,uvDC,uvAC intra: 10.5% 19.7% 3.2% inter: 4.5% 5.3% 0.4%
+[libx264 @ 08df2440] i16 v,h,dc,p: 43% 30%  7% 21%
+[libx264 @ 08df2440] i8c dc,h,v,p: 53% 25% 19%  3%
+[libx264 @ 08df2440] kb/s:2346.77
+Conversion failed!

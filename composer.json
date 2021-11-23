@@ -14,7 +14,5 @@
             "email": "alicangonullu1907@gmail.com"
         }
     ],
-    "require": {
-    "php": ">=7.0"
-    }
+    "require": {}
 }
