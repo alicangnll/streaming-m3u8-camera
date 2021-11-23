@@ -8,7 +8,7 @@ $getir->funcControl('system');
 $configm3u8 = "-listen 1 -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=https://github.com/alicangnll/iptv-server -bufsize 3750k";
 $configflv = "-deinterlace -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 3750k";
 $configts = "-c:v copy -c:a copy -t 00:05:00";
-$m3u8 = "https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8";
+$m3u8 = "https://siloh-ns1.plutotv.net/lilo/production/bein/1/master.m3u8";
 
 $facebooktk = "";
 $twitchtk = "";
@@ -16,7 +16,7 @@ $youtubetk = "";
 $instatk = "";
 $restreamtk = "";
 
-$link = "";
+$link = "rtmp://localhost:1935";
 $token = "";
 
 
