@@ -264,14 +264,25 @@ public function StartTwitchTSStreamWin($pubname, $tslinks, $url, $config, $token
   echo('<pre>'.file_get_contents('log/'.$logfilename.'').'</pre><br>');
 }
 
+public function StartTwitchTSStreamLinux($pubname, $tslinks, $url, $config, $token) {
+  set_time_limit(0);
+  $logfilename = ''.strip_tags($pubname).'-mylog.log';
+  $logfile = ''.dirname(__FILE__).'/log/'.$logfilename.'';
+ $com = 'ffmpeg -y -i "'.$tslinks.'" '.$config.' -f flv "rtmp://live-cdg.twitch.tv/app/'.$token.'" >"'.$logfile.'" 2>&1';
+  shell_exec($com);
+  echo '<br>Command : <br><pre>'.$com.'</pre><br>';
+  echo '<br><b>URL : '.$url.'</b><br>';
+  echo('<pre>'.file_get_contents('log/'.$logfilename.'').'</pre><br>');
+}
+
 public function StartRestreamTSStreamLinux($pubname, $tslinks, $url, $config, $token) {
   set_time_limit(0);
   $logfilename = ''.strip_tags($pubname).'-mylog.log';
   $logfile = ''.dirname(__FILE__).'/log/'.$logfilename.'';
   if(substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2) == "tr") {
-  $com = ' ffmpeg -y -i "'.$tslinks.'" '.$config.' -f flv "rtmp://istanbul.restream.io/live/'.$token.'" >"'.$logfile.'" 2>&1';
+  $com = 'ffmpeg -y -i "'.$tslinks.'" '.$config.' -f flv "rtmp://istanbul.restream.io/live/'.$token.'" >"'.$logfile.'" 2>&1';
   } else {
-  $com = ' ffmpeg -y -i "'.$tslinks.'" '.$config.' -f flv "rtmp://live.restream.io/live/'.$token.'" >"'.$logfile.'" 2>&1';
+  $com = 'ffmpeg -y -i "'.$tslinks.'" '.$config.' -f flv "rtmp://live.restream.io/live/'.$token.'" >"'.$logfile.'" 2>&1';
   }
   shell_exec($com);
   echo '<br>Command : <br><pre>'.$com.'</pre><br>';
