@@ -6,8 +6,8 @@ $getir->funcControl('exec');
 $getir->funcControl('system');
 $getir->require_auth('admin', '1234');
 
-$configm3u8 = "-listen 1 -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=https://github.com/alicangnll/iptv-server -bufsize 3750k";
-$configflv = "-deinterlace -vcodec libx264 -x264opts keyint=8:min-keyint=6:scenecut=2 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 2500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 3750k";
+$configm3u8 = "-listen 1 -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 9500k -acodec aac -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=https://github.com/alicangnll/iptv-server -bufsize 9500k";
+$configflv = "-deinterlace -vcodec libx264 -x264opts keyint=8:min-keyint=6:scenecut=2 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 9500k -acodec aac -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 9500k";
 
 
 $configts = "-c:v copy -c:a copy -t 00:05:00";
