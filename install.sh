@@ -13,3 +13,9 @@ cat /etc/nginx/conf.d/php-fpm.conf
 ls -l /run/php-fpm/www.sock
 cat /etc/nginx/default.d/php.conf
 sudo systemctl restart nginx.service
+
+//Ubuntu and Debian
+wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/index.php
+wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/libs.php
+apt update
+apt install ffmpeg
