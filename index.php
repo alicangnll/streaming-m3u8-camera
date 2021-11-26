@@ -6,8 +6,8 @@ $getir->funcControl('exec');
 $getir->funcControl('system');
 $getir->require_auth('admin', '1234');
 
-$configm3u8 = "-listen 1 -vcodec libx264 -x264opts keyint=8:min-keyint=4:scenecut=1 -s 1280x1024 -preset ultrafast -r 25 -g 100 -b:v 10000k -acodec libmp3lame -ar 44100 -threads 2 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 10000k";
-$configflv = "-deinterlace -vcodec libx264 -x264opts keyint=8:min-keyint=4:scenecut=1 -s 1280x1024 -preset ultrafast -r 25 -g 100 -b:v 10000k -acodec libmp3lame -ar 44100 -threads 2 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 10000k";
+$configm3u8 = "-listen 1 -vcodec libx264 -x264opts keyint=8:min-keyint=6:scenecut=2 -s 1280x1024 -preset ultrafast -r 25 -g 100 -b:v 10000k -acodec libmp3lame -ar 44100 -threads 2 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 10000k";
+$configflv = "-deinterlace -vcodec libx264 -x264opts keyint=8:min-keyint=6:scenecut=2 -s 1280x1024 -preset ultrafast -r 25 -g 100 -b:v 10000k -acodec libmp3lame -ar 44100 -threads 2 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 10000k";
 $configts = "-c:v copy -c:a copy -t 00:05:00";
 $m3u8 = "https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8";
 
