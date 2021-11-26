@@ -17,5 +17,5 @@ sudo systemctl restart nginx.service
 //Ubuntu and Debian
 wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/index.php
 wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/libs.php
-apt update
-apt install ffmpeg
+sudo apt update
+sudo apt install ffmpeg
