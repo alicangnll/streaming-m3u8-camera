@@ -68,6 +68,7 @@ echo '<script>
 <b>You have to write this code as root user. If you are in linux.</b></br>
 <b>When you want start stream, you must be edit index.php and add your restream m3u8 server. After that when you had started stream, you ccan find your m3u8 file in m3u folder</b>
 <pre>'.$code.'</pre></br>
+<a target="_blank" href="index.php?git=M3UParser">M3U Parser</a></br>
 <a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></br>
 <a target="_blank" href="index.php?git=stream-ts">Stream TS</a></br>
 <a target="_blank" href="index.php?git=stream-insta">Stream Instagram</a></br>
@@ -80,6 +81,21 @@ echo '<script>
 <a target="_blank" href="./m3u">M3U Directory</a></br>
 <a target="_blank" href="./log">Log Directory</a></br>';
 break;
+
+	case 'M3UParser':
+		echo '<form action="index.php?git=PM3UParser" method="post">
+		<label for="url">M3U URL:</label>
+		<input type="text" id="url" name="url"><br><br>
+		<input type="submit" value="Parse">
+	  </form>';
+	break;
+
+	case 'PM3UParser':
+		$data = json_decode($getir->M3U_Parser($_POST["url"]), true);
+		foreach ($data["list"]["item"] as $list) {
+			echo 'Name : ' . htmlentities(strip_tags($list["title"])) . '<br> URL : '.htmlentities(strip_tags($list["media_url"])).'<br>';
+		}
+	break;
 
 case 'stream-m3u8':
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
