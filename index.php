@@ -68,17 +68,17 @@ echo '<script>
 <b>You have to write this code as root user. If you are in linux.</b></br>
 <b>When you want start stream, you must be edit index.php and add your restream m3u8 server. After that when you had started stream, you ccan find your m3u8 file in m3u folder</b>
 <pre>'.$code.'</pre></br>
-<a href="index.php?git=stream-m3u8">Stream M3U8</a></br>
-<a href="index.php?git=stream-ts">Stream TS</a></br>
-<a href="index.php?git=stream-insta">Stream Instagram</a></br>
-<a href="index.php?git=stream-face">Stream Facebook</a></br>
-<a href="index.php?git=stream-twitch">Stream Twitch</a></br>
-<a href="index.php?git=stream-restream">Stream Restream</a></br>
-<a href="index.php?git=stream-yt">Stream YouTube</a></br>
-<a href="index.php?git=stream-custom">Stream Custom</a></br>
+<a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></br>
+<a target="_blank" href="index.php?git=stream-ts">Stream TS</a></br>
+<a target="_blank" href="index.php?git=stream-insta">Stream Instagram</a></br>
+<a target="_blank" href="index.php?git=stream-face">Stream Facebook</a></br>
+<a target="_blank" href="index.php?git=stream-twitch">Stream Twitch</a></br>
+<a target="_blank" href="index.php?git=stream-restream">Stream Restream</a></br>
+<a target="_blank" href="index.php?git=stream-yt">Stream YouTube</a></br>
+<a target="_blank" href="index.php?git=stream-custom">Stream Custom</a></br>
 <a href="index.php?git=stream-stop">Stop Streams</a></br>
-<a href="./m3u">M3U Directory</a></br>
-<a href="./log">Log Directory</a></br>';
+<a target="_blank" href="./m3u">M3U Directory</a></br>
+<a target="_blank" href="./log">Log Directory</a></br>';
 break;
 
 case 'stream-m3u8':
