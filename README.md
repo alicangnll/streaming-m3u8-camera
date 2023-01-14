@@ -1,6 +1,6 @@
 <h1>PHP IPTV Class</h1>
 </br>
-<b>NOT : Bu program sadece kamera izleme ve benzeri yasal işlemleri tek panelden birçok cihaza yansıtma işlemleri için hazırlanmıştır. Bu programın yasa dışı kullanımında başınıza gelebilecek tüm hukuki sonuçlar için sorumluluk kabul etmediğimizi beyan ederiz. Lütfen bunu göz önünde bulundurun ve yasa dışı olarak kullanmayın. <br></b>
+<b>NOT : Bu program sadece kamera izleme ve benzeri yasal işlemleri tek panelden bir çok cihaza yansıtma işlemleri için hazırlanmıştır. Bu programın yasa dışı kullanımında başınıza gelebilecek tüm hukuki sonuçlar için sorumluluk kabul etmediğimizi beyan ederiz. Lütfen bunu göz önünde bulundurun ve yasa dışı olarak kullanmayın. <br></b>
 <br>
 <pre>
 This system tested on Windows 8, Ubuntu, CentOS and Windows Server 2012<br>
