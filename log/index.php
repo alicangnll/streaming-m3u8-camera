@@ -1,4 +1,7 @@
 <?php 
+include("../libs.php");
+$getir = new IPTVClass();
+$getir->require_auth('admin', '1234');
 $files = array_diff(scandir("../log"), array('.', '..', "index.php"));
 echo '<table>
 <thead>
