@@ -6,26 +6,27 @@ $getir->funcControl('exec');
 $getir->funcControl('system');
 $getir->require_auth('admin', '1234');
 
-//Restream Configs
-$text = "LiveCam-IPTV-Server-v1.2"; //Text on Stream
-$configm3u8 = "-listen 1 -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 9500k -acodec aac -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=20:text=" . htmlentities(strip_tags($text)) . " -bufsize 9500k";
-$configflv = "-deinterlace -vcodec libx264 -x264opts keyint=8:min-keyint=6:scenecut=2 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 9500k -acodec aac -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=30:text=AliIPTV -bufsize 9500k";
+//Load Configs
+$loadconfig = json_decode(file_get_contents("conf.json"));
+$text = $loadconfig["stream_text_left"]; //Text on Stream
+$configm3u8 = str_replace("example_text", $text, $loadconfig["m3u8_stream_config"]);
+$configflv = str_replace("example_text", $text, $loadconfig["flv_stream_config"]);
 
 //M3U8 Streaming
-$configts = "-c:v copy -c:a copy -t 00:05:00";
-$m3u8 = "https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"; //Edit M3U8
+$configts = $loadconfig["ts_stream_config"];
+$m3u8 = $loadconfig["m3u8_link"]; //Edit M3U8
 $name = trim("channel-" . md5($getir->RandomString()) . ""); //Edit Channel Name
 
 // Social Media Connection
-$facebooktk = "";
-$twitchtk = "";
-$youtubetk = "";
-$instatk = "";
-$restreamtk = "";
+$facebooktk = $loadconfig["facebook_token"];
+$twitchtk = $loadconfig["twitch_token"];
+$youtubetk = $loadconfig["youtube_token"];
+$instatk = $loadconfig["instagram_token"];
+$restreamtk = $loadconfig["restream_token"];
 
 //RTMP Streaming
-$link = "rtmp://localhost:1935";
-$token = "";
+$link = $loadconfig["rtmp_link"];
+$token = $loadconfig["rtmp_token"];
 
 
 if (!isset($_GET['git'])) {
