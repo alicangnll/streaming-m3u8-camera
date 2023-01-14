@@ -9,6 +9,5 @@
     "twitch_token": "twitch_token",
     "youtube_token": "yt_token",
     "instagram_token": "insta_token",
-    "rtmp_token": "rtmp",
     "restream_token": "rtmp"
   }

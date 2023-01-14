@@ -3,7 +3,7 @@ $files = array_diff(scandir("../m3u"), array('.', '..', "index.php"));
 echo '<table>
 <thead>
 <tr>
-<th>M3U</th>
+<th>Title</th>
 </tr>
 </thead>
 <tbody>';

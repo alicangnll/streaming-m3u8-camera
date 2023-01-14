@@ -3,7 +3,7 @@ $files = array_diff(scandir("../log"), array('.', '..', "index.php"));
 echo '<table>
 <thead>
 <tr>
-<th>Logs</th>
+<th>Title</th>
 </tr>
 </thead>
 <tbody>';

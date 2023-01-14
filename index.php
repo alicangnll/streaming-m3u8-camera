@@ -16,7 +16,6 @@ $configflv = str_replace("example_text", $text, $loadconfig["flv_stream_config"]
 //M3U8 Streaming
 $configts = $loadconfig["ts_stream_config"];
 $m3u8 = $loadconfig["m3u8_link"]; //Edit M3U8
-$name = trim("channel-" . md5($getir->RandomString()) . ""); //Edit Channel Name
 
 // Social Media Connection
 $facebooktk = $loadconfig["facebook_token"];
@@ -27,7 +26,7 @@ $restreamtk = $loadconfig["restream_token"];
 
 //RTMP Streaming
 $link = $loadconfig["rtmp_link"];
-$token = $loadconfig["rtmp_token"];
+$token = strip_tags(trim(md5($getir->RandomString())));
 
 
 if (!isset($_GET['git'])) {
@@ -145,65 +144,66 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 
 	case 'stream-m3u8':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartM3U8StreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configm3u8);
+			$getir->StartM3U8StreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configm3u8);
 		} else {
-			$getir->StartM3U8Stream(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configm3u8);
+			$getir->StartM3U8Stream(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configm3u8);
 		}
 		break;
 
 	case 'stream-ts':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configts);
+			$getir->StartTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configts);
 		} else {
-			$getir->StartTSStream(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configts);
+			$getir->StartTSStream(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configts);
 		}
 		break;
 
 	case 'stream-insta':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartIGTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($instatk));
+			$getir->StartIGTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($instatk));
 		} else {
-			$getir->StartIGTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($instatk));
+			$getir->StartIGTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($instatk));
 		}
 		break;
 
 	case 'stream-face':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartFacebookTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($facebooktk));
+			$getir->StartFacebookTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($facebooktk));
 		} else {
-			$getir->StartFacebookTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($facebooktk));
+			$getir->StartFacebookTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($facebooktk));
 		}
 		break;
 
 	case 'stream-twitch':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartTwitchTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($twitchtk));
+			$getir->StartTwitchTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($twitchtk));
 		} else {
-			$getir->StartTwitchTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($twitchtk));
+			$getir->StartTwitchTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($twitchtk));
 		}
 		break;
 
 	case 'stream-restream':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartRestreamTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($restreamtk));
+			$getir->StartRestreamTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($restreamtk));
 		} else {
-			$getir->StartRestreamTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($restreamtk));
+			$getir->StartRestreamTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($restreamtk));
 		}
 		break;
 
 	case 'stream-yt':
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartYouTubeTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($youtubetk));
+			$getir->StartYouTubeTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($youtubetk));
 		} else {
-			$getir->StartYouTubeTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($youtubetk));
+			$getir->StartYouTubeTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($youtubetk));
 		}
 		break;
 
 	case 'stream-custom':
+		shell_exec("start rtmp/rtmp.exe");
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
-			$getir->StartCstTSStreamWin(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($link), strip_tags($token));
+			$getir->StartCstTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($link), strip_tags($token));
 		} else {
-			$getir->StartCstTSStreamLinux(strip_tags($name), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($link), strip_tags($token));
+			$getir->StartCstTSStreamLinux(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($link), strip_tags($token));
 		}
 		break;
 

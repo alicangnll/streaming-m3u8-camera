@@ -1,14 +1,11 @@
 <h1>PHP IPTV Class</h1>
 </br>
-<b>NOT : Bu program sadece kamera izleme ve benzeri yasal işlemleri tek panelden bir çok cihaza yansıtma işlemleri için hazırlanmıştır. Bu programın yasa dışı kullanımında başınıza gelebilecek tüm hukuki sonuçlar için sorumluluk kabul etmediğimizi beyan ederiz. Lütfen bunu göz önünde bulundurun ve yasa dışı olarak kullanmayın. <br></b>
-<br>
-<pre>
-This system tested on Windows 8, Ubuntu, CentOS and Windows Server 2012<br>
-<b>You have to edit "conf.json" file for stream!</n>
-<br>
-</pre>
-<br><br>
-<b>PHP CLI Commands : php -f index.php git=stream-m3u8</b><br><br>
+<pre>This system tested on Windows 8, Ubuntu, CentOS and Windows Server 2012</pre><br>
+<pre>Bu sistem sadece eğitim amaçlı üretilmiş olup herkesin kullanımına açık bir programdır. Bu program üzerinden işlenecek herhangi bir yasa dışı aktiviteden sorumluluk kabul etmemekteyiz. Bunu göze alarak indirmenizi önemle rica ederiz.</pre><br>
+</br>
+<b>PHP CLI Commands : php -f index.php git=stream-m3u8</b><br>
+<img src="img/iptv.png"></br>
 <img src="img/1.png"></br>
 <img src="img/2.png"></br>
+<img src="img/m3u.png"></br>
 <img src="img/3.png"></br>
