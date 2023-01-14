@@ -7,7 +7,8 @@ $getir->funcControl('system');
 $getir->require_auth('admin', '1234');
 
 //Load Configs
-$loadconfig = json_decode(file_get_contents("conf.json"));
+$jsonfile = file_get_contents("conf.json");
+$loadconfig = json_decode($jsonfile, true);
 $text = $loadconfig["stream_text_left"]; //Text on Stream
 $configm3u8 = str_replace("example_text", $text, $loadconfig["m3u8_stream_config"]);
 $configflv = str_replace("example_text", $text, $loadconfig["flv_stream_config"]);
