@@ -375,7 +375,7 @@ class IPTVClass
     </script>";
     } else {
       $linffmpeg = "pkill ffmpeg";
-      $linrtsp = "pkill rtsp-simple-server";
+      $linrtsp = "pkill rtsp";
       shell_exec($linffmpeg);
       shell_exec($linrtsp);
       echo "<script LANGUAGE='JavaScript'>
@@ -454,13 +454,10 @@ class IPTVClass
     $tslink = 'rtmp://localhost:' . $port . '/' . strip_tags($pubname) . '';
     $logfilename = '' . strip_tags($pubname) . '-mylog.log';
     $logfile = '' . dirname(__FILE__) . '/log/' . $logfilename . '';
-    $com1 = '-rtmp ' . dirname(__FILE__) . '/rtsp/rtsp-simple-server';
     $com = ' ffmpeg -y -i "' . $tslinks . '" ' . $config . ' -f flv ' . $tslink . ' >"' . $logfile . '" 2>&1';
-    shell_exec($com1);
     shell_exec($com);
     echo '<br>Command : <br>
-  <pre>
-  ' . $com1 . '<br>
+  <pre><br>
   ' . $com . '
   </pre><br>
   <b>Server : ' . $tslink . '</b><br>';
@@ -474,13 +471,10 @@ class IPTVClass
     $tslink = 'rtmp://localhost:' . $port . '/' . strip_tags($pubname) . '';
     $logfilename = '' . strip_tags($pubname) . '-mylog.log';
     $logfile = '' . dirname(__FILE__) . '/log/' . $logfilename . '';
-    $com1 = '' . dirname(__FILE__) . '\rtsp\rtsp-simple-server.exe';
     $com = '' . dirname(__FILE__) . '\ffmpeg\ffmpeg -y -i "' . $tslinks . '" ' . $config . ' -f flv ' . $tslink . ' >"' . $logfile . '" 2>&1';
-    shell_exec($com1);
     shell_exec($com);
     echo '<br>Command : <br>
-  <pre>
-  ' . $com1 . '<br>
+  <pre><br>
   ' . $com . '
   </pre><br>
   <b>Server : ' . $tslink . '</b><br>';

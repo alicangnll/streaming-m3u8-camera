@@ -26,7 +26,7 @@ $restreamtk = $loadconfig["restream_token"];
 
 //RTMP Streaming
 $link = $loadconfig["rtmp_link"];
-$token = strip_tags(trim(md5($getir->RandomString())));
+$token = md5($getir->RandomString());
 
 
 if (!isset($_GET['git'])) {
@@ -199,7 +199,6 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 		break;
 
 	case 'stream-custom':
-		shell_exec("start rtmp/rtmp.exe");
 		if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 			$getir->StartCstTSStreamWin(strip_tags(trim("channel-" . md5($getir->RandomString()) . "")), strip_tags($m3u8), strip_tags($m3u8), $configflv, strip_tags($link), strip_tags($token));
 		} else {
