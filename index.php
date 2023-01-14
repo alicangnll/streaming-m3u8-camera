@@ -45,7 +45,7 @@ if (!isset($_GET['git'])) {
 switch ($sayfa) {
 
 	case 'index':
-	echo '<head>
+		echo '<head>
 	<title>PHP LiveCam Class v1.1</title>
 	</head>';
 		$code = "sudo yum -y install --nogpgcheck https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
@@ -69,7 +69,6 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 <pre>' . htmlentities(strip_tags($code)) . '</pre></br>
 <b>Live Stream</b>
 <ul>
-<li><a target="_blank" href="index.php?git=M3UParser">M3U Parser</a></li>
 <li><a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></li>
 <li><a target="_blank" href="index.php?git=stream-ts">Stream TS</a></li>
 <li><a target="_blank" href="index.php?git=stream-insta">Stream Instagram</a></li>
@@ -81,6 +80,7 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 </ul>
 <b>Live to M3U</b>
 <ul>
+<li><a target="_blank" href="index.php?git=M3UParser">M3U Parser</a></li>
 <li><a target="_blank" href="index.php?git=YTM3U">YouTube Live to M3U</a></li>
 <li><a target="_blank" href="index.php?git=twitch">Twitch Live to M3U</a></li>
 </ul>
