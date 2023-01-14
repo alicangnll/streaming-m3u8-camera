@@ -6,10 +6,6 @@ $getir->funcControl('exec');
 $getir->funcControl('system');
 $getir->require_auth('admin', '1234');
 
-echo '<head>
-<title>PHP LiveCam Class v1.1</title>
-</head>';
-
 //Restream Configs
 $text = "LiveCam-IPTV-Server-v1.2"; //Text on Stream
 $configm3u8 = "-listen 1 -vcodec libx264 -s 1280x1024 -pix_fmt yuv420p -preset ultrafast -r 30 -g 60 -b:v 9500k -acodec aac -ar 44100 -threads 6 -qscale 3 -b:a 712000 -vf drawtext=fontfile=arial.ttf:fontcolor=red:box=1:fontsize=20:text=" . htmlentities(strip_tags($text)) . " -bufsize 9500k";
@@ -49,6 +45,9 @@ if (!isset($_GET['git'])) {
 switch ($sayfa) {
 
 	case 'index':
+	echo '<head>
+	<title>PHP LiveCam Class v1.1</title>
+	</head>';
 		$code = "sudo yum -y install --nogpgcheck https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 sudo yum -y install --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm 
 sudo rpm -ivh https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
@@ -67,23 +66,37 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 </script>
 <b>You have to write this code as root user. If you are in linux.</b></br>
 <b>When you want start stream, you must be edit index.php and add your restream m3u8 server. After that when you had started stream, you ccan find your m3u8 file in m3u folder</b>
-<pre>' . $code . '</pre></br>
-<a target="_blank" href="index.php?git=M3UParser">M3U Parser</a></br>
-<a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></br>
-<a target="_blank" href="index.php?git=stream-ts">Stream TS</a></br>
-<a target="_blank" href="index.php?git=stream-insta">Stream Instagram</a></br>
-<a target="_blank" href="index.php?git=stream-face">Stream Facebook</a></br>
-<a target="_blank" href="index.php?git=stream-twitch">Stream Twitch</a></br>
-<a target="_blank" href="index.php?git=stream-restream">Stream Restream</a></br>
-<a target="_blank" href="index.php?git=stream-yt">Stream YouTube</a></br>
-<a target="_blank" href="index.php?git=stream-custom">Stream Custom</a></br>
-<a href="index.php?git=stream-stop">Stop Streams</a></br>
-<a target="_blank" href="./m3u">M3U Directory</a></br>
-<a target="_blank" href="./log">Log Directory</a></br>';
+<pre>' . htmlentities(strip_tags($code)) . '</pre></br>
+<b>Live Stream</b>
+<ul>
+<li><a target="_blank" href="index.php?git=M3UParser">M3U Parser</a></li>
+<li><a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></li>
+<li><a target="_blank" href="index.php?git=stream-ts">Stream TS</a></li>
+<li><a target="_blank" href="index.php?git=stream-insta">Stream Instagram</a></li>
+<li><a target="_blank" href="index.php?git=stream-face">Stream Facebook</a></li>
+<li><a target="_blank" href="index.php?git=stream-twitch">Stream Twitch</a></li>
+<li><a target="_blank" href="index.php?git=stream-restream">Stream Restream</a></li>
+<li><a target="_blank" href="index.php?git=stream-yt">Stream YouTube</a></li>
+<li><a target="_blank" href="index.php?git=stream-custom">Stream Custom</a></li>
+</ul>
+<b>Live to M3U</b>
+<ul>
+<li><a target="_blank" href="index.php?git=YTM3U">YouTube Live to M3U</a></li>
+<li><a target="_blank" href="index.php?git=twitch">Twitch Live to M3U</a></li>
+</ul>
+<b>Stream Options</b>
+<ul>
+<li><a href="index.php?git=stream-stop">Stop Streams</a></li>
+<li><a target="_blank" href="./m3u">M3U Directory</a></li>
+<li><a target="_blank" href="./log">Log Directory</a></li>
+</ul>';
 		break;
 
 	case 'M3UParser':
-		echo '<form action="index.php?git=PM3UParser" method="post">
+		echo '<head>
+		<title>PHP LiveCam Class v1.1</title>
+		</head>
+		<form action="index.php?git=PM3UParser" method="post">
 		<label for="url">M3U URL:</label>
 		<input type="text" id="url" name="url"><br><br>
 		<input type="submit" value="Parse">
@@ -95,6 +108,37 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 		foreach ($data["list"]["item"] as $list) {
 			echo 'Name : ' . htmlentities(strip_tags($list["title"])) . '<br> URL : ' . htmlentities(strip_tags($list["media_url"])) . '<br>';
 		}
+		break;
+
+	case 'YTM3U':
+		echo '<head>
+		<title>PHP LiveCam Class v1.1</title>
+		</head>
+		<form action="index.php?git=pytm3u8" method="post">
+			<label for="url">YouTube ID (https://www.youtube.com/watch?v=ID):</label>
+			<input type="text" id="url" name="url"><br><br>
+			<input type="submit" value="Parse">
+		  </form>';
+		break;
+
+	case 'pytm3u8':
+		echo $getir->YouTubeM3U8Gen($_POST["url"]);
+		break;
+
+	case 'twitch':
+		echo '<head>
+		<title>PHP LiveCam Class v1.1</title>
+		</head>
+		<form action="index.php?git=ptwitch" method="post">
+				<label for="url">Twitch ID (https://www.twitch.tv/ID):</label>
+				<input type="text" id="url" name="url"><br><br>
+				<input type="submit" value="Parse">
+			  </form>';
+		break;
+
+	case 'ptwitch':
+		header('Content-Type: text/plain');
+		echo str_replace("#", "\n#", $getir->get_twich_playlist($_POST["url"]));
 		break;
 
 	case 'stream-m3u8':
