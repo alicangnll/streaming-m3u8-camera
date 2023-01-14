@@ -3,6 +3,8 @@
 <pre>
 This system tested on Windows 8, Ubuntu, CentOS and Windows Server 2012<br>
 <b>You have to edit "conf.json" file for stream!</n>
+<br>
+NOT : Bu program sadece kamera izleme ve benzeri yasal işlemleri tek panelden birçok cihaza yansıtma işlemleri için hazırlanmıştır. Bu programın yasa dışı kullanımında başınıza gelebilecek tüm hukuki sonuçlar için sorumluluk kabul etmediğimizi beyan ederiz. Lütfen bunu göz önünde bulundurun ve yasa dışı olarak kullanmayın. <br>
 </pre>
 <br><br>
 <b>PHP CLI Commands : php -f index.php git=stream-m3u8</b><br><br>
