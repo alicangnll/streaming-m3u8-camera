@@ -14,10 +14,8 @@ ls -l /run/php-fpm/www.sock
 cat /etc/nginx/default.d/php.conf
 sudo systemctl restart nginx.service
 
-//Ubuntu and Debian
-wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/index.php
-wget https://raw.githubusercontent.com/alicangnll/iptv-class/main/libs.php
-mkdir m3u
-mkdir log
+# For Ubuntu and Debian
 sudo apt update
-sudo apt install ffmpeg
+sudo apt install ffmpeg apache2
+cd /var/www/html
+git clone https://github.com/alicangnll/iptv-class
