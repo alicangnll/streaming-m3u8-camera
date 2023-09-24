@@ -67,7 +67,11 @@ setenforce 0 && sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/sysconfig
 </script>
 <b>You have to write this code as root user. If you are in linux.</b></br>
 <b>When you want start stream, you must be edit index.php and add your restream m3u8 server. After that when you had started stream, you ccan find your m3u8 file in m3u folder</b>
-<pre>' . htmlentities(strip_tags($code)) . '</pre></br>
+<pre>' . htmlentities(strip_tags($code)) . '</pre>
+
+<pre>NOT : Bu sistem sadece eğitim amaçlı üretilmiş olup herkesin kullanımına açık bir programdır. 
+Bu program üzerinden işlenecek herhangi bir yasa dışı aktiviteden sorumluluk kabul etmemekteyiz. 
+Bunu kabul ederek indirmenizi önemle rica ederiz.</pre></br>
 <b>Live Stream</b>
 <ul>
 <li><a target="_blank" href="index.php?git=stream-m3u8">Stream M3U8</a></li>
