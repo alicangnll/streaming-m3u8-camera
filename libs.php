@@ -147,7 +147,7 @@ class IPTVClass
     if ($js == 1) {
       return false;
     } else {
-      return strip_tags(trim($js));
+      return strip_tags(str_replace(" ", "", $js));
     }
   }
 
